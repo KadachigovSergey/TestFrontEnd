@@ -1,0 +1,71 @@
+// custom var
+@import "custom";
+// fonts
+@import "fonts";
+// reset
+@import "reset";
+// materialize
+@import "materialize";
+// default-class
+@import "default-class";
+// layout
+@import "layout";
+//.input-field label {
+//    top:-20px;
+//}
+//select{
+//    display: block;
+//}
+//.select-dropdown{
+//    &.active{
+//        li{
+//            &.disabled{
+//                display: none;
+//            }
+//        }
+//    }
+//}
+.my-input{
+    opacity: 0 !important;
+    -webkit-transition: .3s;
+    -moz-transition: .3s ;
+    -ms-transition: .3s ;
+    -o-transition: .3s ;
+    transition: .3s ;
+    &.open{
+        opacity: 1 !important;
+    }
+}
+.select-dropdown{
+    .disabled{
+        display: none;
+    }
+}
+.edit-table{
+    width:650px;
+    display: block;
+    margin: 0 auto 40px;
+    @media(max-width: 991px){
+        width: 80%;
+    }
+    @media(max-width: 600px){
+        width: 95%;
+    }
+}
+#nav-mobile{
+    padding-top: 30px;
+    a{
+        text-align: center;
+        padding: 0 10px 0 0;
+    }
+
+}
+
+
+
+.icon-block {
+    padding: 0 15px;
+}
+.icon-block .material-icons {
+    font-size: inherit;
+}
